@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link type="text/css" rel="stylesheet" href="style/project.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.1/iframeResizer.min.js"></script>
+  </head>
+
+  <body>
+    <div id="menu">
+      <a class="menu-link" href="index.html">簡介</a>
+      <a class="menu-link menu-link-active" href="project.html">專案</a>
+    </div>
+
+    <div id="title">
+      <span>Lin Wei Yi</span>
+      <span>portfolio <span class="title-chn">作品集</span></span>
+    </div>
+
+    <div id="main">
+      <div id="project">
+        <a class="project-wrapper" onclick="switchIntro('project/multimedia/amusing-puzzle.html')">
+          <img class="project-mg" src="project-mg.png">
+          <div class="project-active">數位專案</div>
+        </a>
+
+        <a class="project-wrapper" onclick="switchIntro('project/graphicdesign/nuk.html')">
+          <img class="project-gr" src="project-gr.png">
+          <div class="project-active">平面專案</div>
+        </a>
+
+        <a class="project-wrapper" onclick="switchIntro('project/uidesign/nsc.html')">
+          <img class="project-ui" src="project-ui.png">
+          <div class="project-active">介面專案</div>
+        </a>
+
+        <a class="project-wrapper" onclick="switchIntro('project/threed/prize-cup.html')">
+          <img class="project-3d" src="project-3d.png">
+          <div class="project-active">立體專案</div>
+        </a>
+      </div>
+
+      <iframe id="project-intro" src="project/multimedia/amusing-puzzle.html"
+       src="project/graphicdesign/nuk.html" scrolling="no">
+      </iframe>
+
+    </div>
+
+    <img id="top-button" src="top-button.png" onclick="toTop()">
+
+    <script>
+      function switchIntro(src) {
+        document.querySelector('#project-intro').src = src;
+      }
+
+      function toTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      iFrameResize(document.querySelector('#project'));
+    </script>
+  </body>
+</html>

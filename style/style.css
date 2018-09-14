@@ -1,0 +1,129 @@
+#menu {
+  align-items: flex-end;
+  display: flex;
+  height: 75px;
+  justify-content: center;
+  position: relative;
+}
+
+#menu::after {
+  bottom: 0;
+  border-bottom: 1.5px solid black;
+  content: "";
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 45%;
+}
+
+.menu-link {
+  padding: 10px 20px;
+}
+
+.menu-link-active {
+  border: 1px solid black;
+  padding: 4px 12px;
+  margin: 5px 7px;
+}
+
+#title {
+  align-items: center;
+  display: flex;
+  flex-direction:column;
+  font-size: 25px;
+  height: 150px;
+  justify-content: center;
+}
+
+.title-chn {
+ font-size: 15px;
+ vertical-align: text-bottom;
+}
+
+#main {
+ align-items: flex-start;
+ display: flex;
+ justify-content: center;
+}
+
+#main-left {
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 12px;
+  line-height: 10px;
+  width: 190px;
+}
+
+.img-profile-picture{
+  border: 2px solid #B5B5B6;
+  padding: 20px 30px 20px 30px;
+
+}
+
+#main-right {
+  border: 2px solid #B5B5B6;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 25px;
+  margin: 10px 0 0 0;
+  padding: 40px;
+  width: 295px;
+}
+.graphic-design{
+font-size: 10px;
+}
+
+.ps-logo{
+  height: 30px;
+  padding: 0 0 0 17px;
+  vertical-align: middle;
+  width: 30px;
+}
+
+.ai-logo{
+  height: 30px;
+  padding: 0 5px 0 10px;
+  vertical-align: middle;
+  width: 30px;
+}
+
+.painter-logo{
+  height: 30px;
+  padding: 0 0 0 5px;
+  vertical-align: middle;
+  width: 30px;
+}
+
+.media-design{
+font-size: 10px;
+}
+
+.pr-logo{
+  height: 30px;
+  padding: 0 5px 0 5px;
+  vertical-align: middle;
+  width: 30px;
+}
+
+.ae-logo{
+  height: 30px;
+  padding: 0 5px 0 5px;
+  vertical-align: middle;
+  width: 30px;
+}
+
+.max3d-logo{
+  height: 30px;
+  padding: 0 5px 0 5px;
+  vertical-align: middle;
+  width: 30px;
+}
+
+.one3d-logo{
+  height: 30px;
+  padding: 0 0 0 5px;
+  vertical-align: middle;
+  width: 30px;
+}

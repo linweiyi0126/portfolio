@@ -1,0 +1,137 @@
+a{
+  text-decoration: none;
+}
+
+#menu {
+  align-items: flex-end;
+  display: flex;
+  height: 75px;
+  justify-content: center;
+  position: relative;
+}
+
+#menu::after {
+  bottom: 0;
+  border-bottom: 1.5px solid black;
+  content: "";
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 45%;
+}
+
+.menu-link {
+  padding: 10px 20px;
+}
+
+.menu-link-active {
+  border: 1px solid black;
+  padding: 4px 12px;
+  margin: 5px 7px;
+}
+
+#title {
+  align-items: center;
+  display: flex;
+  flex-direction:column;
+  font-size: 25px;
+  height: 150px;
+  justify-content: center;
+}
+
+.title-chn {
+ font-size: 15px;
+ vertical-align: middle;
+}
+
+#main {
+ align-items:center;
+ display: flex;
+ flex-direction: column;
+}
+
+#project{
+  align-items: center;
+  display: flex;
+  height: 200px;
+}
+
+.project-wrapper{
+  position: relative;
+}
+
+.project-mg{
+  padding: 20px 25px 20px 25px;
+}
+
+.project-wrapper:hover .project-mg{
+  opacity: 0.5;
+}
+
+.project-active{
+  bottom: 0px;
+  box-shadow: 3px 3px 12px gray;
+  box-sizing: content-box;
+  background-color: #2c3a68;
+  color: #ffffff;
+  height: 39px;
+  left: -3px;
+  margin: 20px 25px;
+  opacity: 0;
+  position: absolute;
+  width: 156px;
+
+  text-align: center;
+  line-height: 39px;
+}
+
+.project-wrapper:hover .project-active{
+  opacity: 1;
+}
+
+.project-mg, .project-active{
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.project-gr{
+  padding: 20px 25px 20px 25px;
+}
+
+.project-wrapper:hover .project-gr{
+  opacity: 0.5;
+}
+
+.project-gr, .project-active{
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.project-ui{
+  border: 1px solid #B5B5B6;
+  margin: 20px 25px 20px 25px;
+}
+
+.project-3d{
+  padding: 20px 25px 20px 25px;
+}
+
+#project-intro{
+  border: 2px solid #B5B5B6;
+  width: 840px;
+}
+
+#top-button{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  opacity: 0.35;
+  transition-property: opacity;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+#top-button:hover{
+  opacity: 1;
+}
