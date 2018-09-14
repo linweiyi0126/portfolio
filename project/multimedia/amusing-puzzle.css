@@ -58,3 +58,13 @@ line-height: 25px;
   width: 650px;
   height: 487.5px;
 }
+
+.project-picture{
+  justify-content: center;
+  padding: 15px 0 15px 0;
+  width: 650px;
+}
+
+.project-picture-title{
+  width: 650px;
+}

@@ -55,6 +55,7 @@ line-height: 25px;
 }
 
 .project-picture{
+  justify-content: center;
   padding: 10px 0 10px 0;
   width: 650px;
 }
@@ -63,4 +64,8 @@ line-height: 25px;
   position: relative;
   width: 650px;
   height: 487.5px;
+}
+
+.project-postcard{
+  width: 322px;
 }
