@@ -137,7 +137,7 @@ a{
 #top-button{
   position: fixed;
   bottom: 0;
-  right: 175px;
+  right: 450px;
   opacity: 0.35;
   transition-property: opacity;
   transition-duration: 1s;
