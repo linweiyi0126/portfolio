@@ -66,6 +66,7 @@ a{
 }
 
 .project-wrapper:hover .project-mg{
+  cursor: pointer;
   opacity: 0.5;
 }
 
@@ -100,6 +101,7 @@ a{
 }
 
 .project-wrapper:hover .project-gr{
+  cursor: pointer;
   opacity: 0.5;
 }
 
@@ -113,8 +115,18 @@ a{
   margin: 20px 25px 20px 25px;
 }
 
+.project-wrapper:hover .project-ui{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 .project-3d{
   padding: 20px 25px 20px 25px;
+}
+
+.project-wrapper:hover .project-3d{
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 #project-intro{
@@ -125,7 +137,7 @@ a{
 #top-button{
   position: fixed;
   bottom: 0;
-  right: 0;
+  right: 175px;
   opacity: 0.35;
   transition-property: opacity;
   transition-duration: 1s;
